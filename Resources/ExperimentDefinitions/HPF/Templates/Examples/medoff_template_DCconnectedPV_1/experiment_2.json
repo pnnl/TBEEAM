@@ -1,0 +1,80 @@
+{
+  "version" : "2",
+  "id" : "1a142a27-e68b-4f47-bc25-fb21f511ab37",
+  "experiment" : {
+    "base" : {
+      "analysis" : {
+        "variableFilters" : [ ],
+        "selectedType" : "dynamic",
+        "choices" : [ {
+          "type" : "dynamic",
+          "parameters" : {
+            "final_time" : 614800,
+            "interval" : 900,
+            "start_time" : -900
+          },
+          "simulationOptions" : {
+            "dynamic_diagnostics" : false,
+            "solver" : "ExplicitEuler"
+          },
+          "solverOptions" : {
+            "h" : 900,
+            "store_event_points" : false,
+            "tolerance" : 0.1
+          },
+          "compilerOptions" : {
+            "generate_html_diagnostics" : false,
+            "include_protected_variables" : false
+          },
+          "runtimeOptions" : { }
+        }, {
+          "type" : "steady state",
+          "parameters" : { },
+          "simulationOptions" : { },
+          "solverOptions" : {
+            "jacobian_calculation_mode" : 9,
+            "max_iter_no_jacobian" : 1,
+            "residual_equation_scaling" : 5,
+            "step_limit_factor" : 1,
+            "tolerance" : 1.0E-5
+          },
+          "compilerOptions" : {
+            "automatic_tearing" : true,
+            "divide_by_vars_in_tearing" : true,
+            "equation_sorting" : true,
+            "expose_scalar_equation_blocks_in_interactive_fmu" : true,
+            "generate_html_diagnostics" : false,
+            "hand_guided_tearing" : true,
+            "include_protected_variables" : false,
+            "index_reduction" : false,
+            "interactive_fmu" : true,
+            "local_iteration_in_tearing" : "annotation",
+            "merge_blt_blocks" : true,
+            "variability_propagation" : false
+          },
+          "runtimeOptions" : { }
+        } ],
+        "expansion" : {
+          "discreteAlgorithm" : {
+            "noOfSamples" : 0,
+            "seed" : 0
+          },
+          "continuousAlgorithm" : {
+            "type" : "SOBOL",
+            "noOfSamples" : 10,
+            "seed" : 0
+          }
+        }
+      },
+      "modifiers" : {
+        "initializeFrom" : "",
+        "variables" : [ ]
+      }
+    }
+  },
+  "metadata" : {
+    "created" : "2025-09-08 03:20:29.18733728",
+    "lastModified" : "2025-09-08T03:34:27.563143716Z",
+    "name" : "Experiment 2"
+  }
+}

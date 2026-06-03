@@ -1,0 +1,83 @@
+{
+  "version" : "2",
+  "id" : "a7e63a80-d4fa-4eeb-b3f4-c070cead156a",
+  "experiment" : {
+    "base" : {
+      "analysis" : {
+        "variableFilters" : [ {
+          "type" : "text",
+          "value" : "*.P"
+        }, {
+          "type" : "text",
+          "value" : "*.P_Loss"
+        }, {
+          "type" : "text",
+          "value" : "*.PLoss"
+        }, {
+          "type" : "text",
+          "value" : "*.P_AC"
+        }, {
+          "type" : "text",
+          "value" : "*.P_DC"
+        }, {
+          "type" : "text",
+          "value" : "realToComplex"
+        }, {
+          "type" : "text",
+          "value" : "*.P1"
+        }, {
+          "type" : "text",
+          "value" : "*.Loss"
+        }, {
+          "type" : "text",
+          "value" : "*.u"
+        } ],
+        "selectedType" : "dynamic",
+        "choices" : [ {
+          "type" : "dynamic",
+          "parameters" : {
+            "final_time" : 31536000,
+            "interval" : 900,
+            "start_time" : 0
+          },
+          "simulationOptions" : {
+            "dynamic_diagnostics" : false,
+            "solver" : "ExplicitEuler"
+          },
+          "solverOptions" : {
+            "h" : 900,
+            "store_event_points" : false
+          },
+          "compilerOptions" : {
+            "generate_html_diagnostics" : false,
+            "include_protected_variables" : false
+          },
+          "runtimeOptions" : { }
+        } ],
+        "expansion" : {
+          "discreteAlgorithm" : {
+            "noOfSamples" : 0,
+            "seed" : 0
+          },
+          "continuousAlgorithm" : {
+            "type" : "SOBOL",
+            "noOfSamples" : 10,
+            "seed" : 0
+          }
+        }
+      },
+      "modifiers" : {
+        "initializeFrom" : "",
+        "variables" : [ {
+          "name" : "gain.k",
+          "expression" : "range(0.1,1,10)"
+        } ]
+      }
+    }
+  },
+  "metadata" : {
+    "created" : "2025-08-26 00:12:08.204523326",
+    "lastModified" : "2025-09-24T22:29:27.565933412Z",
+    "name" : "Experiment 2"
+  }
+}

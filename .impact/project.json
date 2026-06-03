@@ -1,0 +1,85 @@
+{
+  "name": "Beeam_1",
+  "format": "1.0.0",
+  "dependencies": [
+    {
+      "name": "Modelica",
+      "versionSpecifier": "4.0.0"
+    },
+    {
+      "name": "Buildings",
+      "versionSpecifier": "12.1.1+build.804162"
+    },
+    {
+      "name": "Electrification",
+      "versionSpecifier": "2.1.0+build.19"
+    },
+    {
+      "name": "EnergySystems",
+      "versionSpecifier": "1.4.0+build.14"
+    },
+    {
+      "name": "Modelon",
+      "versionSpecifier": "6.0.0+build.25"
+    }
+  ],
+  "content": [
+    {
+      "relpath": "HPF",
+      "contentType": "MODELICA",
+      "name": "HPF",
+      "defaultDisabled": false,
+      "id": "eab03284db8341f88c62e108c22abf3b"
+    },
+    {
+      "relpath": "FMU/benchtop_demo/benchtop_demo.mo",
+      "contentType": "MODELICA",
+      "name": "benchtop_de",
+      "defaultDisabled": false,
+      "id": "c391cbf32d4444d18eb13b87e73bd545"
+    },
+    {
+      "relpath": "Resources/Views",
+      "contentType": "VIEWS",
+      "defaultDisabled": false,
+      "id": "4dc8696a4fe14d4e84c823823dcf6b9a"
+    },
+    {
+      "relpath": "Resources/Favorites",
+      "contentType": "FAVORITES",
+      "defaultDisabled": false,
+      "id": "2a1025f21b50459ebc743281496fc15a"
+    },
+    {
+      "relpath": "Resources/CustomFunctions",
+      "contentType": "CUSTOM_FUNCTIONS",
+      "defaultDisabled": false,
+      "id": "046f82af3f60408dbbddc86c9a9a04dc"
+    },
+    {
+      "relpath": "Resources/Custom",
+      "contentType": "GENERIC",
+      "defaultDisabled": false,
+      "id": "e925b420f9794ae297c4262b4898be4a"
+    },
+    {
+      "relpath": "ReferenceResults",
+      "contentType": "REFERENCE_RESULTS",
+      "defaultDisabled": false,
+      "id": "150b33a9c1c4434b96a31c916acd4bd1"
+    },
+    {
+      "relpath": "Resources/ExperimentDefinitions",
+      "contentType": "EXPERIMENT_DEFINITIONS",
+      "defaultDisabled": false,
+      "id": "82ec3b70a37141c2ac3d15a33efb8294"
+    },
+    {
+      "relpath": "Scripts",
+      "contentType": "GENERIC",
+      "defaultDisabled": true,
+      "id": "a10f561fb5ce409f8b676637fbfe8faa"
+    }
+  ],
+  "executionOptions": []
+}

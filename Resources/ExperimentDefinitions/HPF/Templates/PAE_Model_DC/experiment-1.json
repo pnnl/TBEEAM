@@ -1,0 +1,71 @@
+{
+  "version" : "1",
+  "id" : "cbaf001390784b888d64803f182ebefa",
+  "experiment" : {
+    "base" : {
+      "analysis" : {
+        "variableFilters" : [ ],
+        "selectedType" : "dynamic",
+        "choices" : [ {
+          "type" : "dynamic",
+          "parameters" : {
+            "final_time" : 31536000,
+            "interval" : 3600,
+            "start_time" : 0
+          },
+          "simulationOptions" : {
+            "dynamic_diagnostics" : false,
+            "ncp" : 500,
+            "solver" : "CVode"
+          },
+          "solverOptions" : {
+            "tolerance" : 0.1
+          },
+          "compilerOptions" : {
+            "c_compiler" : "gcc",
+            "generate_html_diagnostics" : true,
+            "include_protected_variables" : false,
+            "show_error_location" : "both"
+          },
+          "runtimeOptions" : { }
+        }, {
+          "type" : "steady state",
+          "parameters" : { },
+          "simulationOptions" : { },
+          "solverOptions" : {
+            "jacobian_calculation_mode" : 9,
+            "max_iter_no_jacobian" : 1,
+            "residual_equation_scaling" : 5,
+            "step_limit_factor" : 1,
+            "tolerance" : 1.0E-5
+          },
+          "compilerOptions" : {
+            "automatic_tearing" : true,
+            "c_compiler" : "gcc",
+            "divide_by_vars_in_tearing" : true,
+            "equation_sorting" : true,
+            "expose_scalar_equation_blocks_in_interactive_fmu" : true,
+            "generate_html_diagnostics" : false,
+            "hand_guided_tearing" : true,
+            "include_protected_variables" : false,
+            "index_reduction" : false,
+            "interactive_fmu" : true,
+            "local_iteration_in_tearing" : "annotation",
+            "merge_blt_blocks" : true,
+            "variability_propagation" : false
+          },
+          "runtimeOptions" : { }
+        } ]
+      },
+      "modifiers" : {
+        "initializeFrom" : "",
+        "variables" : [ ]
+      }
+    }
+  },
+  "metadata" : {
+    "created" : "2024-01-24T22:49:25.524Z",
+    "lastModified" : "2024-10-22T21:21:33.157108929Z",
+    "name" : "Experiment 1"
+  }
+}

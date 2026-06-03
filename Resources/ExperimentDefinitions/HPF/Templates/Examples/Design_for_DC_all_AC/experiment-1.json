@@ -1,0 +1,71 @@
+{
+  "version" : "1",
+  "id" : "d0a31168d2b44c999ce3827bf79d6205",
+  "experiment" : {
+    "base" : {
+      "analysis" : {
+        "variableFilters" : [ ],
+        "selectedType" : "dynamic",
+        "choices" : [ {
+          "type" : "dynamic",
+          "parameters" : {
+            "final_time" : 86400,
+            "interval" : 900,
+            "start_time" : 0
+          },
+          "simulationOptions" : {
+            "dynamic_diagnostics" : false,
+            "ncp" : 500,
+            "solver" : "CVode"
+          },
+          "solverOptions" : {
+            "store_event_points" : false,
+            "tolerance" : 0.001
+          },
+          "compilerOptions" : {
+            "c_compiler" : "gcc",
+            "generate_html_diagnostics" : false,
+            "include_protected_variables" : false
+          },
+          "runtimeOptions" : { }
+        }, {
+          "type" : "steady state",
+          "parameters" : { },
+          "simulationOptions" : { },
+          "solverOptions" : {
+            "jacobian_calculation_mode" : 9,
+            "max_iter_no_jacobian" : 1,
+            "residual_equation_scaling" : 5,
+            "step_limit_factor" : 1,
+            "tolerance" : 1.0E-5
+          },
+          "compilerOptions" : {
+            "automatic_tearing" : true,
+            "c_compiler" : "gcc",
+            "divide_by_vars_in_tearing" : true,
+            "equation_sorting" : true,
+            "expose_scalar_equation_blocks_in_interactive_fmu" : true,
+            "generate_html_diagnostics" : false,
+            "hand_guided_tearing" : true,
+            "include_protected_variables" : false,
+            "index_reduction" : false,
+            "interactive_fmu" : true,
+            "local_iteration_in_tearing" : "annotation",
+            "merge_blt_blocks" : true,
+            "variability_propagation" : false
+          },
+          "runtimeOptions" : { }
+        } ]
+      },
+      "modifiers" : {
+        "initializeFrom" : "",
+        "variables" : [ ]
+      }
+    }
+  },
+  "metadata" : {
+    "created" : "2024-01-04T23:36:02.351Z",
+    "lastModified" : "2024-06-17T20:32:56.377003827Z",
+    "name" : "Experiment 1"
+  }
+}

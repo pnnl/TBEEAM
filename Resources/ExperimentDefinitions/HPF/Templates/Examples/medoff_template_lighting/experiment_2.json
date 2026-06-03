@@ -1,0 +1,57 @@
+{
+  "version" : "2",
+  "id" : "b8be13e7-64aa-4ba3-affa-7f2d3b7842eb",
+  "experiment" : {
+    "base" : {
+      "analysis" : {
+        "variableFilters" : [ {
+          "type" : "text",
+          "value" : "*.P1"
+        }, {
+          "type" : "text",
+          "value" : "voltageSource.P"
+        } ],
+        "selectedType" : "dynamic",
+        "choices" : [ {
+          "type" : "dynamic",
+          "parameters" : {
+            "final_time" : 604800,
+            "interval" : 900,
+            "start_time" : 0
+          },
+          "simulationOptions" : {
+            "dynamic_diagnostics" : false
+          },
+          "solverOptions" : {
+            "store_event_points" : false
+          },
+          "compilerOptions" : {
+            "generate_html_diagnostics" : false,
+            "include_protected_variables" : false
+          },
+          "runtimeOptions" : { }
+        } ],
+        "expansion" : {
+          "discreteAlgorithm" : {
+            "noOfSamples" : 0,
+            "seed" : 0
+          },
+          "continuousAlgorithm" : {
+            "type" : "SOBOL",
+            "noOfSamples" : 10,
+            "seed" : 0
+          }
+        }
+      },
+      "modifiers" : {
+        "initializeFrom" : "",
+        "variables" : [ ]
+      }
+    }
+  },
+  "metadata" : {
+    "created" : "2025-08-23 20:15:02.582177911",
+    "lastModified" : "2025-08-23T20:55:34.988603542Z",
+    "name" : "Experiment 2"
+  }
+}
