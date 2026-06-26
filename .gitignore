@@ -8,6 +8,9 @@
 # such as one ending in .m or .py . As mentioned above, this is not allowed
 # Add a provision to manually remove the executable
 
+# ignore Modelon Impact files
+.impact/
+
 # ignore for JModelica files
 # including mat files (model fitting for converter harmonic model has converter
 # data stored in mat files.)
@@ -32,6 +35,7 @@ Scripts/**/*.exe
 
 # misc
 **/.fuse*
+.DS_Store
 # temporary matlab scripts
 **/tmpScript*
 .vscode/
