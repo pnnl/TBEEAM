@@ -26,7 +26,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 
-The original Building Electrical Efficiency Analysis Model can be found at https://github.com/NatLabRockies/BEEAM and was developed under the following copyright.
+The original Building Electrical Efficiency Analysis Model can be found at https://github.com/NatLabRockies/BEEAM which was developed under the following copyright.
 
 Copyright (c) 2020 Colorado State University Research Foundation (CSURF); Alliance for Sustainable Energy, LLC; and contributors. All rights reserved.
 
